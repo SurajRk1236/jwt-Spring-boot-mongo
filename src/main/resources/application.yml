@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: JsonWT
+  data:
+    mongodb:
+      database: JWT
+      host: localhost
+      port: 27017
+#      username:
+#      password:
+server:
+  port: 8080
+
+logging:
+  level:
+    root: DEBUG
+
+secret:
+  key: oMlxgjqJoC2Mj5BhX4Cn9rP1GXCdFXPfA9kL1uW3cyueio8789835654689idhhejkruha
+
+token:
+  acessTime: 900000 #15 mins
+  refreshTime: 604800000 #7 Days
